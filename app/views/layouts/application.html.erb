@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Devunaror</title>
+    <title>Devuna</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= render 'layouts/link' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'dashboard.css' %>
+    <%= javascript_pack_tag 'dashboard.js'%>
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/topnav' %>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <%= render 'layouts/sidebar' %>
+        <%= render 'layouts/content' %>
+      </div>
+    </div>
+
+    <%= render 'layouts/js' %>
   </body>
 </html>

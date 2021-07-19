@@ -26,3 +26,17 @@ Step 4 :
     #This command is same like php artisan tinker  User::all() -> User.all, User::find(1) -> User.find(1)
     rails console
 ````
+### Include a file inside a file
+````ruby
+    #Create Ruby File  (Partial File)
+    _header.html.erb
+
+    #Import to the main template  rails know the header = _header.html.erb
+    <%= render 'home/header' %>
+
+````
+
+````ruby
+    #This command will create model, controller, view file and other file. 
+    rails g scaffold  
+````
