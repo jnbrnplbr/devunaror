@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Initial Learning about Ruby on Rails
 
-Things you may want to cover:
 
-* Ruby version
+Step 1 :
+````ruby
+    #This command will create controller and views 
+    rails generate controller Articles
+````
 
-* System dependencies
+Step 2 :
+````ruby
+    #This command will create model and migration for Article
+    rails generate model Article 
+````
 
-* Configuration
+Step 3 : 
+````ruby
+    #This command will migrate the migrations
+    rails db:migrate 
+````
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Step 4 : 
+````ruby
+    #This command is same like php artisan tinker  User::all() -> User.all, User::find(1) -> User.find(1)
+    rails console
+````
